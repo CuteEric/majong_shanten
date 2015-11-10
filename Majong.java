@@ -384,8 +384,8 @@ public class Majong {
             shanten1 += tatsu1 + toitsu1 + mentsu1 - 5;
         }
 
-        if (mentsu1 < 4 && shanten1 == 0 && toitsu1 == 0){
-            //面子が4つそろっておらず対子がない時はシャンテン数を1増やす。(ターツターツではシャンテン数が足りない)
+        if (mentsu1 < 4 &&shanten1 == 0 && toitsu1 == 0 && tatsu1 + toitsu1 + mentsu1 >= 5){
+            //面子が4つそろっておらず対子がなく、さらにメンツの数は揃っている場合はシャンテン数を1増やす。(ターツターツではシャンテン数が足りない)
             shanten1 += 1;
         }
         
@@ -420,8 +420,8 @@ public class Majong {
             shanten2 += tatsu2 + toitsu2 + mentsu2 - 5;
         }
         
-        if (mentsu2 < 4 &&shanten2 == 0 && toitsu2 == 0){
-            //面子が4つそろっておらず対子がない時はシャンテン数を1増やす。(ターツターツではシャンテン数が足りない)
+        if (mentsu2 < 4 &&shanten2 == 0 && toitsu2 == 0 && tatsu2 + toitsu2 + mentsu2 >= 5){
+            //面子が4つそろっておらず対子がなく、さらにメンツの数は揃っている場合はシャンテン数を1増やす。(ターツターツではシャンテン数が足りない)
             shanten2 += 1;
         }
         
